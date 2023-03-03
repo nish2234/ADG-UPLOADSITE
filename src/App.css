@@ -3,6 +3,8 @@
   width: 100vw;
   background-size: cover;
   background-image: url("backg.jpg");
+  background-color: #fff;
+  background-position: cover;
   
 }
 .box{

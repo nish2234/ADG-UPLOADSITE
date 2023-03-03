@@ -1,5 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
+export const axiosInstance = axios.create({
+  baseURL: "https://something.com",
+});
 
 function LoginSignup() {
     const [mail , setmail] = useState("");
@@ -16,7 +19,7 @@ function LoginSignup() {
       //Axios.get request(no URL) , after authentication send to home page
     }
     const postrequest = ()=>{
-      //Axios.post email and password (no URL) 
+      
     }
     
   
