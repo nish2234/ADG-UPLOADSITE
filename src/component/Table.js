@@ -13,6 +13,8 @@ function Table(props) {
     }
     const submitbtn = () => {
       //Axios post formdata to backend
+
+      alert("File submitted successfully");
     }
       return(
       <>
