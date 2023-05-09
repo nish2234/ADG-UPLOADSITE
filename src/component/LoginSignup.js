@@ -1,12 +1,11 @@
 import React from 'react'
 import { useState } from 'react';
-export const axiosInstance = axios.create({
-  baseURL: "https://something.com",
-});
+import { Link, useNavigate } from "react-router-dom";
 
 function LoginSignup() {
     const [mail , setmail] = useState("");
     const [pass , setpass] = useState("");
+    const navigate = useNavigate();
     const setemail = (event) => {
       setmail(event.target.value);
           
@@ -17,9 +16,10 @@ function LoginSignup() {
     }
     const getrequest = ()=>{
       //Axios.get request(no URL) , after authentication send to home page
+      navigate('/home');
     }
     const postrequest = ()=>{
-      
+      alert('Signed in successfully , proceed Login');
     }
     
   
